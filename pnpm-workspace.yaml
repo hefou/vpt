@@ -1,0 +1,21 @@
+packages:
+  - "packages/*"
+catalog:
+  vitepress: ^2.0.0-alpha.21
+  vue: ^3.5.45
+  "vite": "^8.3.7"
+  "vite-plugin-dts": "^5.1.2"
+  "@vitejs/plugin-vue": "^6.0.10"
+  "rimraf": "^6.1.4"
+  "vue-tsc": "^3.3.14"
+  "typescript": "^5.9.3"
+
+shellEmulator: true
+autoInstallPeers: false
+minimumReleaseAge: 0
+publishBranch: main
+
+allowBuilds:
+  "@parcel/watcher": true
+  esbuild: true
+  vue-demi: true

@@ -1,0 +1,23 @@
+main:
+  push:
+    - services:
+        - docker
+      stages:
+        - name: update version
+          script: npm version $CNB_BRANCH --no-git-tag-version
+        - name: npm-cnb publish
+          image: tencentcom/npm
+          settings:
+            username: $CNB_TOKEN_USER_NAME
+            token: $CNB_TOKEN
+            email: $CNB_COMMITTER_EMAIL
+            registry: https://npm.cnb.cool/hefow/npm/-/packages/
+            folder: ./dist
+            fail_on_version_conflict: true
+        - name: npm publish
+          image: tencentcom/npm
+          imports: https://cnb.cool/cnb-secrets/secrets/-/blob/main/envs/npm_cnbcool.yml
+          settings:
+            token: $NPM_TOKEN
+            folder: ./
+            fail_on_version_conflict: true

@@ -1,0 +1,173 @@
+:root {
+  /**
+   * Default
+   * -------------------------------------------------------------------------- */
+
+  --iconify-defColor: var(--vp-c-text-2);
+  --component-bg: var(--vp-c-bg-alt);
+  --imr: 0.25em;
+  --promo-text-color: var(--vp-c-brand-1);
+  --promo-text-weight: bold;
+  --promo-title-bg: var(--Aside-promo);
+  --promo-title-color: transparent;
+  --promo-title-weight: 600;
+
+  /**
+   * Component: Notice
+   * -------------------------------------------------------------------------- */
+  --Notice-bg: var(--vp-button-alt-bg);
+  --Notice-border: transparent;
+  --Notice-data: var(--vp-c-brand-1);
+  --Notice-bg-hover: var(--vp-button-alt-bg);
+  --Notice-border-hover: var(--vp-c-brand-1);
+  --Notice-transform-hover: none;
+  --Notice-transform-active: none;
+
+  /**
+   * Component: Aside
+   * -------------------------------------------------------------------------- */
+
+  --Aside-bg: var(--component-bg);
+  --Aside-border: transparent;
+  --Aside-name: -webkit-linear-gradient(225deg, var(--vp-c-brand-1), var(--vp-c-brand-3), var(--vp-c-brand-1));
+  --Aside-name-color: transparent;
+  --Aside-promo: -webkit-linear-gradient(
+    225deg,
+    rgba(100, 108, 255, 1),
+    rgba(176, 71, 255, 1),
+    rgba(100, 108, 255, 1)
+  );
+  --Aside-promo-color: transparent;
+  --Aside-hide: var(--vp-c-text-2);
+  --Aside-info: var(--vp-c-text-2);
+  --Aside-name-bg-hover: var(--component-bg);
+  --Aside-name-border-hover: var(--vp-c-brand-1);
+  --Aside-promo-bg-hover: var(--component-bg);
+  --Aside-promo-border-hover: rgba(100, 108, 255, 1);
+  --Aside-transform-hover: none;
+  --Aside-transform-active: none;
+
+  /**
+   * Component: BoxCube
+   * -------------------------------------------------------------------------- */
+
+  --Boxcube-bg: var(--component-bg);
+  --Boxcube-border: transparent;
+  --Boxcube-name: var(--vp-c-brand-1);
+  --Boxcube-bg-hover: var(--component-bg);
+  --Boxcube-border-hover: var(--vp-c-brand-1);
+  --Boxcube-name-hover: var(--vp-c-brand-2);
+  --Boxcube-boxshadow-hover: none;
+  --Boxcube-transform-hover: none;
+  --Boxcube-transform-active: none;
+
+  /**
+   * Component: Links
+   * -------------------------------------------------------------------------- */
+
+  --Links-bg: var(--component-bg);
+  --Links-border: transparent;
+  --Links-name: var(--vp-c-brand-1);
+  --Links-desc: var(--vp-c-text-2);
+  --Links-bg-hover: var(--component-bg);
+  --Links-border-hover: var(--vp-c-brand-1);
+  --Links-name-hover: var(--vp-c-brand-2);
+  --Links-boxshadow-hover: none;
+  --Links-transform-hover: none;
+  --Links-transform-active: none;
+
+  /**
+   * Component: Card
+   * -------------------------------------------------------------------------- */
+
+  --Card-bg: var(--component-bg);
+  --Card-border: transparent;
+  --Card-name: var(--vp-c-brand-1);
+  --Card-desc: var(--vp-c-text-2);
+  --Card-bg-hover: var(--component-bg);
+  --Card-border-hover: var(--vp-c-brand-1);
+  --Card-name-hover: var(--vp-c-brand-2);
+  --Card-boxshadow-hover: none;
+  --Card-transform-hover: none;
+  --Card-transform-active: none;
+
+  /**
+   * Component: CopyText
+   * -------------------------------------------------------------------------- */
+
+  --CopyText-border: transparent;
+  --CopyText-auto-bg: var(--vp-code-bg);
+  --CopyText-auto-color: var(--vp-c-brand-1);
+  --CopyText-auto-bg-hover: var(--vp-c-brand-soft);
+  --CopyText-auto-border-hover: transparent;
+  --CopyText-info-bg: var(--vp-code-bg);
+  --CopyText-info-color: var(--vp-c-text-1);
+  --CopyText-info-bg-hover: var(--vp-code-bg);
+  --CopyText-info-border-hover: transparent;
+  --CopyText-tip-bg: var(--vp-c-green-soft);
+  --CopyText-tip-color: var(--vp-c-green-1);
+  --CopyText-tip-bg-hover: var(--vp-c-green-soft);
+  --CopyText-tip-border-hover: transparent;
+  --CopyText-warning-bg: var(--vp-c-warning-soft);
+  --CopyText-warning-color: var(--vp-c-warning-1);
+  --CopyText-warning-bg-hover: var(--vp-c-warning-soft);
+  --CopyText-warning-border-hover: transparent;
+  --CopyText-danger-bg: var(--vp-c-danger-soft);
+  --CopyText-danger-color: var(--vp-c-danger-1);
+  --CopyText-danger-bg-hover: var(--vp-c-danger-soft);
+  --CopyText-danger-border-hover: transparent;
+
+  /**
+   * Component: Pill
+   * -------------------------------------------------------------------------- */
+
+  --Pill-bg: var(--vp-code-bg);
+  --Pill-border: transparent;
+  --Pill-name: var(--vp-c-brand-1);
+  --Pill-bg-hover: var(--vp-code-bg);
+  --Pill-border-hover: var(--vp-c-brand-1);
+  --Pill-name-hover: var(--vp-c-brand-2);
+  --Pill-boxshadow-hover: none;
+  --Pill-transform-hover: none;
+  --Pill-transform-active: none;
+
+  /**
+   * Component: Footer
+   * -------------------------------------------------------------------------- */
+
+  --Footer-bg: var(--component-bg);
+  --Footer-link-hover: var(--vp-c-brand-1);
+
+  /**
+   * Component: Underline
+   * -------------------------------------------------------------------------- */
+
+  --Underline-bg: var(--vp-c-brand-1);
+
+  /**
+   * button
+   * -------------------------------------------------------------------------- */
+
+  --button-author: url('https://hefung.github.io/logo.svg');
+  --button-logo: url('https://hefung.github.io/logo.svg');
+}
+
+.dark {
+  /**
+   * Default
+   * -------------------------------------------------------------------------- */
+
+  --promo-title-bg: var(--Aside-promo);
+  --promo-title-color: transparent;
+
+  /**
+   * Component: Aside
+   * -------------------------------------------------------------------------- */
+  --Aside-promo: -webkit-linear-gradient(
+    225deg,
+    rgba(120, 200, 255, 1),
+    rgba(255, 130, 255, 1),
+    rgba(120, 200, 255, 1)
+  );
+  --Aside-name-color: transparent;
+}

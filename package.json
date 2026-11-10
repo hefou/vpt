@@ -1,0 +1,22 @@
+{
+  "name": "vpt",
+  "version": "1.0.1",
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "description": "多套VitePress && vuePress主题集合，包含文档主题、博客主题、增强官方主题等",
+  "scripts": {
+    "build": "pnpm -r  build"
+  },
+  "keywords": [
+    "vitepress",
+    "vitepress-theme",
+    "hefung",
+    "docs-theme",
+    "blog-theme"
+  ],
+  "author": "hefung",
+  "license": "MIT",
+  "devDependencies": {
+    "mermaid": "^12.3.0"
+  }
+}

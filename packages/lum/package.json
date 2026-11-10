@@ -1,0 +1,135 @@
+{
+  "name": "@hefou/lum",
+  "version": "1.0.0",
+  "description": "专为 VitePress 打造的主题美化与 Vue 扩展组件库",
+  "keywords": [
+    "css",
+    "vue",
+    "vite",
+    "typescript",
+    "vitepress",
+    "vitepress-plugin",
+    "vitepress-theme",
+    "vitepress-ui",
+    "iconify",
+    "iconify-icon",
+    "tools",
+    "hefou",
+    "@hefou/lum",
+    "vitepress-enhance"
+  ],
+  "homepage": "https://hefung.github.io/",
+  "bugs": {
+    "url": "https://cnb.cool/hefow/theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cnb.cool/hefow/theme.git",
+    "directory": "packages/lum"
+  },
+  "license": "MIT",
+  "author": "Theo",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./types/index.ts"
+    },
+    "./style": {
+      "types": "./types/style.d.ts",
+      "import": "./style/all.css",
+      "default": "./style/all.css"
+    },
+    "./icon": {
+      "types": "./types/style.d.ts",
+      "import": "./style/icon.css",
+      "default": "./style/icon.css"
+    },
+    "./button": {
+      "types": "./types/style.d.ts",
+      "import": "./style/button.css",
+      "default": "./style/button.css"
+    },
+    "./colors": {
+      "types": "./types/style.d.ts",
+      "import": "./style/colors.css",
+      "default": "./style/colors.css"
+    },
+    "./doc": {
+      "types": "./types/style.d.ts",
+      "import": "./style/doc.css",
+      "default": "./style/doc.css"
+    },
+    "./doc-blocks": {
+      "types": "./types/style.d.ts",
+      "import": "./style/doc-blocks.css",
+      "default": "./style/doc-blocks.css"
+    },
+    "./home": {
+      "types": "./types/style.d.ts",
+      "import": "./style/home.css",
+      "default": "./style/home.css"
+    },
+    "./pic": {
+      "types": "./types/style.d.ts",
+      "import": "./style/picture.css",
+      "default": "./style/picture.css"
+    },
+    "./badge": {
+      "types": "./types/style.d.ts",
+      "import": "./style/badge.css",
+      "default": "./style/badge.css"
+    },
+    "./components-var": {
+      "types": "./types/style.d.ts",
+      "import": "./style/components-var.css",
+      "default": "./style/components-var.css"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "style": "./dist/esm/dux.css",
+  "sideEffects": [
+    "./types/index.ts",
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "style/",
+    "types/",
+    "components/",
+    "composables/",
+    "tsconfig.json",
+    "readme.md",
+    "License"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && vite build && (vue-tsc --declaration --emitDeclarationOnly --outDir dist/types || true)",
+    "build:watch": "vite build --watch",
+    "dev": "pnpm run build:watch",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp"
+  },
+  "dependencies": {
+    "@iconify/vue": "^5.0.5",
+    "iconify-icon": "^3.0.5",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "@vitejs/plugin-vue": "catalog:",
+    "rimraf": "catalog:",
+    "vue-tsc": "catalog:"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.6.4 || >=2.0.0-alpha.18 <3.0.0",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "bumpp": "^12.3.0",
+    "typescript": "catalog:",
+    "vitepress": "catalog:",
+    "vue": "catalog:"
+  }
+}
