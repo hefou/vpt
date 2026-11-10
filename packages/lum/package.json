@@ -1,6 +1,6 @@
 {
   "name": "@hefou/lum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "专为 VitePress 打造的主题美化与 Vue 扩展组件库",
   "keywords": [
     "css",
@@ -18,13 +18,13 @@
     "@hefou/lum",
     "vitepress-enhance"
   ],
-  "homepage": "https://hefung.github.io/",
+  "homepage": "https://hefou.github.io/",
   "bugs": {
-    "url": "https://cnb.cool/hefow/theme/issues"
+    "url": "hhttps://github.com/hefou/vpt/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://cnb.cool/hefow/theme.git",
+    "url": "https://github.com/hefou/vpt.git",
     "directory": "packages/lum"
   },
   "license": "MIT",

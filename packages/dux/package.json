@@ -1,6 +1,6 @@
 {
   "name": "@hefou/dux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于VitePress 文档主题，适配AI知识库与项目文档",
   "type": "module",
   "main": "./dist/cjs/index.cjs",
@@ -85,7 +85,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://cnb.cool/hefow/theme",
+    "url": "https://github.com/hefou/vpt",
     "directory": "packages/dux"
   }
 }

@@ -1,4 +1,28 @@
-# dux
+# @hefou/dux
+
+<div align="center">
+  <p>
+    <img src="https://i.theojs.net/logo/lumen-logo-large.svg" width="300" alt="@hefou/dux" />
+  </p>
+  <p>
+    <img
+      src="https://img.shields.io/npm/v/@hefou/dux?style=flat-square&colorA=080f12&colorB=1fa669"
+      alt="release"
+    />
+    <img
+      src="https://img.shields.io/npm/dm/@hefou/dux?style=flat-square&colorA=080f12&colorB=1fa669"
+      alt="downloads"
+    />
+    <img
+      src="https://img.shields.io/npm/l/@hefou/dux?style=flat-square&colorA=080f12&colorB=1fa669"
+      alt="license"
+    />
+  </p>
+  <p>
+    <a href="https://hefou.github.io/">演示站点</a> | 
+    <a href="https://hefou.github.io">查看文档</a>
+  </p>
+</div>
 
 现代、优雅、可定制的 VitePress 文档主题，适合技术文档与项目站点。
 
@@ -17,10 +41,16 @@
 
 ### 1. 安装主题
 
-```bash
-pnpm add dux
-# 或
-npm i dux
+```sh [pnpm]
+pnpm add @hefou/dux
+```
+
+```sh [npm]
+npm install @hefou/dux
+```
+
+```sh [yarn]
+yarn add @hefou/dux
 ```
 
 ### 2. 在项目根目录新建 `.npmrc`
@@ -38,7 +68,7 @@ ignoreBuilds=false
 
 ```ts
 // .vitepress/config.ts
-import { withTheme } from "dux/config";
+import { withTheme } from "@hefou/dux/config";
 
 export default withTheme({
   title: "My Docs",
@@ -51,7 +81,7 @@ export default withTheme({
 
 ```ts
 // .vitepress/theme/index.ts
-import { theme } from "dux";
+import { theme } from "@hefou/dux";
 export default theme;
 ```
 
@@ -63,9 +93,9 @@ pnpm vitepress dev docs
 ## 配置项示例
 
 ```ts
-export default withTheme({
+export default VPTheme({
   title: "My Docs",
-  description: "基于 @hcf-ai/theme-hcf 构建文档站点",
+  description: "基于 @hefou/dux 构建文档站点",
   lang: "zh-CN",
   themeConfig: {
     logo: "/logo.svg",
