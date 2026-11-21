@@ -28,7 +28,7 @@
     "directory": "packages/lum"
   },
   "license": "MIT",
-  "author": "Theo",
+  "author": "hefou",
   "type": "module",
   "exports": {
     ".": {
@@ -87,10 +87,10 @@
     },
     "./package.json": "./package.json"
   },
-  "main": "./dist/cjs/index.cjs",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
-  "style": "./dist/esm/dux.css",
+  "main": "./types/index.ts",
+  "module": "./types/index.ts",
+  "types": "./types/index.d.ts",
+  "style": "./style/all.css",
   "sideEffects": [
     "./types/index.ts",
     "**/*.css"
@@ -110,26 +110,24 @@
     "build": "pnpm run clean && vite build && (vue-tsc --declaration --emitDeclarationOnly --outDir dist/types || true)",
     "build:watch": "vite build --watch",
     "dev": "pnpm run build:watch",
-    "prepublishOnly": "pnpm run build",
-    "release": "bumpp"
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.5",
-    "iconify-icon": "^3.0.5",
-    "vite": "catalog:",
-    "vite-plugin-dts": "catalog:",
-    "@vitejs/plugin-vue": "catalog:",
-    "rimraf": "catalog:",
-    "vue-tsc": "catalog:"
+    "iconify-icon": "^3.0.5"
   },
   "peerDependencies": {
     "vitepress": "^1.6.4 || >=2.0.0-alpha.18 <3.0.0",
     "vue": "^3.5.44"
   },
   "devDependencies": {
-    "bumpp": "^12.3.0",
     "typescript": "catalog:",
     "vitepress": "catalog:",
-    "vue": "catalog:"
+    "vue": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "@vitejs/plugin-vue": "catalog:",
+    "rimraf": "catalog:",
+    "vue-tsc": "catalog:"
   }
 }

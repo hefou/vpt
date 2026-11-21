@@ -64,13 +64,13 @@ ignoreBuilds=false
 
 ### 3. 最小化配置（推荐）
 
-`withTheme` 会自动注入 `vite.ssr.noExternal`、`optimizeDeps.exclude`，并启用 Mermaid 运行时渲染
+`VPTheme` 会自动注入 `vite.ssr.noExternal`、`optimizeDeps.exclude`，并启用 Mermaid 运行时渲染
 
 ```ts
 // .vitepress/config.ts
-import { withTheme } from "@hefou/dux/config";
+import { VPTheme } from "@hefou/dux/config";
 
-export default withTheme({
+export default VPTheme({
   title: "My Docs",
   description: "",
   themeConfig: {
